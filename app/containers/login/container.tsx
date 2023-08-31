@@ -1,7 +1,7 @@
 import Link from 'next/link';
-import style from './Login.style';
+import style from './style';
 
-const LoginContainer = () => {
+const container = () => {
   return (
     <div css={style} className="login">
       <form className="login__form">
@@ -40,4 +40,4 @@ const LoginContainer = () => {
   );
 };
 
-export default LoginContainer;
+export default container;

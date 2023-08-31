@@ -1,8 +1,8 @@
-import Container from '@/containers/main/container';
+import LoginContainer from '@/containers/login/container';
 import type { NextPage } from 'next';
 
 const Index: NextPage = () => {
-  return <Container />;
+  return <LoginContainer />;
 };
 
 export default Index;
