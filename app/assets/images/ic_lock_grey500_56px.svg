@@ -1,0 +1,26 @@
+<svg id="ic_lock_grey500_56px" xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ff4081;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #aaa;
+        stroke-miterlimit: 10;
+        stroke-width: 1.4px;
+      }
+    </style>
+  </defs>
+  <path id="패스_308" data-name="패스 308" class="cls-1" d="M0,0H56V56H0Z"/>
+  <g id="그룹_4938" data-name="그룹 4938" transform="translate(14.475 4)">
+    <g id="그룹_4939" data-name="그룹 4939" transform="translate(-4.175 1.799)">
+      <rect id="사각형_4436" data-name="사각형 4436" class="cls-2" width="34" height="29.003" transform="translate(0.7 14.594)"/>
+      <path id="패스_341" data-name="패스 341" class="cls-2" d="M9.438,14.594v-5.3a8.5,8.5,0,0,1,17-.182c0,.06,0,.122,0,.182v5.3" transform="translate(-0.238 0)"/>
+      <circle id="타원_125" data-name="타원 125" class="cls-2" cx="2.189" cy="2.189" r="2.189" transform="translate(15.511 24.331)"/>
+      <line id="선_103" data-name="선 103" class="cls-2" y1="5.151" transform="translate(17.7 28.708)"/>
+    </g>
+  </g>
+</svg>

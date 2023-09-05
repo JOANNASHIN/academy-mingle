@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+    <g data-name="ic_delete_grey800_20px">
+        <g data-name="그룹 4809">
+            <g data-name="그룹 4814">
+                <path data-name="선 83" transform="translate(6 4)" style="fill:none;stroke:#666;stroke-miterlimit:10;stroke-width:1.2px" d="M0 0h8"/>
+            </g>
+        </g>
+        <path data-name="선 84" transform="translate(8.5 9.28)" style="fill:none;stroke:#666;stroke-miterlimit:10;stroke-width:1.2px" d="M0 0v4"/>
+        <path data-name="선 85" transform="translate(11.5 9.28)" style="fill:none;stroke:#666;stroke-miterlimit:10;stroke-width:1.2px" d="M0 0v4"/>
+        <g data-name="그룹 4811">
+            <g data-name="그룹 4813">
+                <path data-name="선 86" transform="translate(3 6.56)" style="fill:none;stroke:#666;stroke-miterlimit:10;stroke-width:1.2px" d="M0 0h14"/>
+                <path data-name="사각형 4281" transform="translate(5.5 6.56)" style="fill:none;stroke:#666;stroke-miterlimit:10;stroke-width:1.2px" d="M0 0h9v9.44H0z"/>
+            </g>
+        </g>
+    </g>
+</svg>
