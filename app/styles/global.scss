@@ -1,8 +1,19 @@
-@import './base/reset.scss';
+/**
+ * global scss
+ */
 
-html,
-body,
-#__next {
-  width: 100%;
-  height: 100%;
-}
+@import 'sass-rem';
+$rem-baseline: 10px;
+
+// font
+@import './base/fonts.scss';
+
+// use
+@import './base/variables.scss';
+@import './base/mixins.scss';
+@import './base/extends.scss';
+
+// common
+@import './base/common.scss';
+@import './base/reset.scss';
+@import './base/layout.scss';
