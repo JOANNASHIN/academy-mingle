@@ -1,8 +1,10 @@
 export const color = {
   black: '#000',
   white: '#fff',
+  point: '#cbadf5',
   red: '#e50914',
-  bgGrey: '#eee',
-  textGrey: '#b3b3b3',
+  bgGrey: '#f8f8f8',
+  textGrey: '#666',
+  borderLightGrey: '#eee',
   borderGrey: '#ddd',
 };
