@@ -1,13 +1,22 @@
-import { useRouter } from 'next/router';
+import AcademyMain from './parts/academyMain';
 import style from './style';
 
+const MemberType = {
+  Student: 'student',
+  Parent: 'Parent',
+  Teacher: 'Teacher',
+  Academy: 'Academy',
+};
+
 const container = () => {
-  const router = useRouter();
-  console.log(router);
+  const type = MemberType.Academy;
+
   return (
-    <div css={style}>
-      <h1>main</h1>
-    </div>
+    <section css={style}>
+      <h2 className="blind">메인페이지</h2>
+
+      <AcademyMain />
+    </section>
   );
 };
 
