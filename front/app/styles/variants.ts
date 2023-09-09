@@ -12,7 +12,7 @@ export const color = {
   pointpurple: '#955eff',
   point2: '#6b16ee',
   red: '#e50914',
-  bgGrey: '#f0f0f0',
+  bgGrey: '#f8f8f8',
   textGrey: '#666',
   lightGrey: '#c0c0c0',
   borderLightGrey: '#eee',
