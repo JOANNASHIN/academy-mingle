@@ -23,10 +23,9 @@ const style = css`
 
   .border-gray-box {
     overflow: hidden;
-    // border: 1px solid ${color.borderLightGrey};
+    border: 1px solid ${color.borderLightGrey};
     border-radius: 1rem;
     margin-bottom: 4.8rem;
-    // background: ${color.bgGrey};
 
     .box {
       &-top {
