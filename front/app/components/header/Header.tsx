@@ -9,24 +9,20 @@ const Header = (props: IHeaderProps) => {
   return (
     <header css={style} className="header">
       <div className="header__wrapper">
-        <div className="header__left">
-          <h1 className="header__logo">
-            <Link href="/">
-              <img src="/images/logo.png" alt="logo" />
-            </Link>
-          </h1>
-
-          <ul className="header__menu">
-            <li className="header__menu__box">
-              <Link href="/">홈</Link>
-            </li>
-          </ul>
-        </div>
+        <h1 className="header__logo">
+          <Link href="/">
+            <span>AMINGLE</span>
+          </Link>
+        </h1>
 
         {/* 퀵메뉴 */}
-        <nav className="header__quick">
-          <button className="header__quick__menu">알림</button>
-          <button className="header__quick__menu">프로필</button>
+        <nav className="header__nav">
+          <button className="header__nav__menu">
+            <img src="/assets/images/icon/app-indicator.svg" alt="알림버튼" />
+          </button>
+          <button className="header__nav__menu">
+            <img src="/assets/images/icon/person-fill.svg" alt="프로필" />
+          </button>
         </nav>
       </div>
     </header>
