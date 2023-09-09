@@ -1,14 +1,10 @@
-/**
-* Created by Forbiz on 2022.03
-* [레이아웃 SCSS]
-* 기본 레이아웃 SCSS입니다.
-*/
-
 html,
 body,
 #__next {
   width: 100%;
   height: 100%;
+  background: #7a6df2;
+  color: #fff;
 }
 
 .layout {
@@ -23,10 +19,6 @@ body,
     height: 100%;
   }
 
-  /**
-   * NOTI: 상위 부모요소에 overflow(overflow-x 포함) 관련된 속성이 있으면 
-   * position: sticky가 제대로 작동되지 않습니다. 따라서 삭제하였습니다. (참고) NC-10682
-   */
   &__wrapper {
     width: 100%;
   }

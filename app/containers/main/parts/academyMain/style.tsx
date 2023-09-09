@@ -26,7 +26,7 @@ const style = css`
     // border: 1px solid ${color.borderLightGrey};
     border-radius: 1rem;
     margin-bottom: 4.8rem;
-    background: ${color.bgGrey};
+    // background: ${color.bgGrey};
 
     .box {
       &-top {
