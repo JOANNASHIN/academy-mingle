@@ -18,11 +18,11 @@ const Header = (props: IHeaderProps) => {
         {/* 퀵메뉴 */}
         <nav className="header__nav">
           <button className="header__nav__menu">
-            <img src="/assets/images/icon/app-indicator.svg" alt="알림버튼" />
+            <img src="/assets/images/icon/bell.svg" alt="알림버튼" />
           </button>
-          <button className="header__nav__menu">
-            <img src="/assets/images/icon/person-fill.svg" alt="프로필" />
-          </button>
+          {/* <button className="header__nav__menu">
+            <img src="/assets/images/icon/setting.svg" alt="프로필" />
+          </button> */}
         </nav>
       </div>
     </header>

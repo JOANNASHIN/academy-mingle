@@ -25,16 +25,18 @@ const style = css`
 
   .border-gray-box {
     overflow: hidden;
-    border: 1px solid ${color.borderLightGrey};
-    border-radius: 0.4rem;
     margin-bottom: 4.8rem;
+    background: ${color.white};
+    border: 1px solid ${color.greyf8};
+    box-shadow: 0.1rem 0.4rem 0.5rem 0.2rem rgb(0, 0, 0, 0.1);
+    border-radius: 0.8rem;
 
     .box {
       &-top {
         display: flex;
         justify-content: space-between;
         padding: 1.6rem;
-        border-bottom: 1px solid ${color.borderLightGrey};
+        border-bottom: 1px solid ${color.greyeee};
 
         a {
           color: ${color.black};
@@ -60,13 +62,13 @@ const style = css`
 
         dt {
           margin-right: 1rem;
-          color: ${color.textGrey};
+          color: ${color.grey666};
           font-size: 1.2rem;
         }
 
         dd {
           span {
-            color: ${color.borderGrey};
+            color: ${color.greyddd};
             font-weight: bold;
             font-size: 2rem;
           }
@@ -85,12 +87,12 @@ const style = css`
         display: flex;
         flex-wrap: wrap;
         padding: 1.2rem;
-        border-bottom: 1px solid ${color.borderGrey};
-        
+        border-bottom: 1px solid ${color.greyddd};
+
         div {
           flex: 0 0 20%;
           padding: 0.4rem;
-          color: ${color.textGrey};
+          color: ${color.grey666};
           font-size: 0.6rem;
           box-sizing: border-box;
         }
@@ -104,6 +106,7 @@ const style = css`
 
           &.has {
             position: relative;
+            color: ${color.pointDark};
 
             &:after {
               content: '';
@@ -112,25 +115,23 @@ const style = css`
               left: 0;
               width: 100%;
               height: 100%;
-              border-radius: 50%; 
-              border: 0.4rem solid #bdf53d;
+              border-radius: 50%;
+              border: 0.4rem solid ${color.pointDark};
               box-sizing: border-box;
             }
           }
-          
         }
       }
 
-      &-week { 
+      &-week {
         display: flex;
         justify-content: space-around;
         padding: 1.2rem;
-        background: ${color.bgGrey};
-        border-bottom: 1px solid ${color.borderLightGrey};
+        border-bottom: 1px solid ${color.greyeee};
 
         &-wrapper {
           position: relative;
-          color: ${color.textGrey};
+          color: ${color.grey666};
           font-size: 1rem;
           text-align: center;
           box-sizing: border-box;
@@ -152,12 +153,13 @@ const style = css`
         display: flex;
         justify-content: center;
         background: ${color.point};
+        border-top: 1px solid ${color.greyeee};
 
         a {
           width: 100%;
           padding: 1rem 0;
-          border-right: 1px solid ${color.borderLightGrey};
-          color: ${color.bgGrey};
+          border-right: 1px solid ${color.greyeee};
+          color: ${color.white};
           font-weight: 500;
           font-size: 1.1rem;
           text-align: center;

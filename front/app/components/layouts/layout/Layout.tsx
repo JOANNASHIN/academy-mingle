@@ -1,6 +1,7 @@
-import Header from '@/components/header/Header';
 import style from './Layout.style';
 import { useEffect } from 'react';
+import Header from '@/components/layouts/header/Header';
+import Footer from '@/components/layouts/footer/Footer';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   /**
@@ -38,6 +39,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div css={style}>
       <Header />
       <main>{children}</main>
+      <Footer />
     </div>
   );
 }

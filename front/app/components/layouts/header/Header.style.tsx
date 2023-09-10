@@ -17,7 +17,7 @@ const style = css`
       width: 100%;
       max-width: 1280px;
       height: ${HeaderHeight};
-      padding: 0 1.2rem;
+      padding: 0 2rem;
       box-sizing: border-box;
     }
 
@@ -27,15 +27,18 @@ const style = css`
         font-weight: bold;
         font-size: 2.2rem;
         letter-spacing: 0.1rem;
+        text-shadow: 0.1rem 0.4rem 0.5rem rgb(0, 0, 0, 0.1);
       }
     }
 
     &__nav {
+      margin: -1rem;
+
       &__menu {
-        padding: 0.8rem;
+        padding: 1rem;
 
         img {
-          width: 2rem;
+          height: 2rem;
         }
       }
     }
