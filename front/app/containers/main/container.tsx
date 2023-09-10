@@ -1,3 +1,4 @@
+import Layout from '@/components/layout/Layout';
 import AcademyMain from './parts/academyMain';
 import style from './style';
 
@@ -12,11 +13,11 @@ const container = () => {
   const type = MemberType.Academy;
 
   return (
-    <section css={style}>
+    <Layout css={style}>
       <h2 className="blind">메인페이지</h2>
 
       <AcademyMain />
-    </section>
+    </Layout>
   );
 };
 

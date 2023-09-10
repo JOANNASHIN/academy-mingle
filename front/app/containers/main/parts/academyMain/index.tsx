@@ -1,4 +1,6 @@
+import PaymentBlock from '@/components/parts/paymentBlock/Payment';
 import style from './style';
+import ConsultantBlock from '@/components/parts/counsultantBlock/ConsultantBlock';
 
 const AcademyMain = () => {
   return (
@@ -37,62 +39,15 @@ const AcademyMain = () => {
       </section>
 
       {/* 상담 */}
-      <section className="border-gray-box">
-        <div className="box-top">
-          <span className="box-title">상담</span>
-          <a href="#">전체보기</a>
-        </div>
-        <div className="box-cont">
-          <dl className="box-desc">
-            <dt>오늘 상담 예약 수</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-          <dl className="box-desc">
-            <dt>전체 상담 예약 수</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-        </div>
+      <ConsultantBlock />
 
-        <nav className="box-nav">
-          <a href="#">날짜별 상담일정 확인</a>
-          <a href="#">선생님별 상담일정 확인</a>
-          <a href="#">상담이력 확인</a>
-        </nav>
-      </section>
-
-      <section className="border-gray-box">
-        <div className="box-top">
-          <span className="box-title">청구/납부</span>
-          <a href="#">전체보기</a>
-        </div>
-        <div className="box-cont">
-          <dl className="box-desc">
-            <dt>미납</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-          <dl className="box-desc">
-            <dt>납부 완료</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-        </div>
-        <nav className="box-nav">
-          <a href="#">전체 리마인드 알림</a>
-          <a href="#">월별 보기</a>
-        </nav>
-      </section>
+      {/* 청구/납부 */}
+      <PaymentBlock />
 
       <section className="border-gray-box">
         <div className="box-top">
           <span className="box-title">공지사항</span>
-          <a href="#">전체보기</a>
+          <a href="#">전체보기 &gt;</a>
         </div>
         <div className="box-cont">
           <dl className="box-desc">
@@ -104,24 +59,41 @@ const AcademyMain = () => {
         </div>
 
         <nav className="box-nav">
-          <a href="#">클래스별/개별로 확인하기</a>
           <a href="#">공지 등록하기</a>
+          <a href="#">공지 확인하기</a>
         </nav>
       </section>
 
-      <section className="main-menus">
-        <h3>메뉴</h3>
+      <section className="border-gray-box">
+        <div className="box-top">
+          <span className="box-title">학원관리</span>
+          <a href="#">정보관리 &gt;</a>
+        </div>
+        <div className="box-cont">
+          <dl className="box-desc">
+            <dt>학생</dt>
+            <dd>
+              <span>0</span>
+            </dd>
+          </dl>
+          <dl className="box-desc">
+            <dt>선생님</dt>
+            <dd>
+              <span>0</span>
+            </dd>
+          </dl>
+          <dl className="box-desc">
+            <dt>클래스</dt>
+            <dd>
+              <span>0</span>
+            </dd>
+          </dl>
+        </div>
 
-        <nav className="main-menus-wrapper">
-          <a href="#">
-            <span>클래스별 관리</span>
-          </a>
-          <a href="#">
-            <span>강사 관리</span>
-          </a>
-          <a href="#">
-            <span>학원 정보 관리</span>
-          </a>
+        <nav className="box-nav">
+          <a href="#">학생 관리</a>
+          <a href="#">선생님 관리</a>
+          <a href="#">클래스 관리</a>
         </nav>
       </section>
     </section>
