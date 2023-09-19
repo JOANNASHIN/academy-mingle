@@ -1,4 +1,4 @@
-import Layout from '@/components/layout/Layout';
+import Layout from '@/components/layouts/layout/Layout';
 import AcademyMain from './parts/academyMain';
 import style from './style';
 
