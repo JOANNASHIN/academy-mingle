@@ -1,4 +1,4 @@
-import { color } from '@/styles/variants';
+import { color, zIndex, layout } from '@/styles/variants';
 import { css } from '@emotion/react';
 
 export const HeaderHeight = '6rem';
@@ -7,6 +7,7 @@ const style = css`
   position: fixed;
   bottom: 0;
   left: 0;
+  z-index: ${zIndex.floating};
   width: 100%;
   height: 5rem;
   background: ${color.bg};
