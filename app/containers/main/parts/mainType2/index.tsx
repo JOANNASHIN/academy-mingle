@@ -12,11 +12,7 @@ const mainType2 = () => {
         <fieldset>
           <div className="search__text">
             <em>아밍글이 처음이신가요?</em>
-            <p>
-              가입하시고, 아밍글의
-              <br />
-              다양한 서비스를 이용해 보세요.
-            </p>
+            <p>아밍글의 다양한 서비스를 검색해 보세요.</p>
           </div>
 
           <label className="search__form">

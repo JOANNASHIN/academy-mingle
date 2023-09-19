@@ -4,7 +4,7 @@ import { css } from '@emotion/react';
 const style = css`
   .search {
     position: relative;
-    padding: 4rem 2rem 0;
+    padding: 6rem 2rem 0;
     margin-bottom: 4rem;
     background: ${color.point};
 
@@ -12,15 +12,15 @@ const style = css`
       color: ${color.whiteGreen};
 
       em {
-        font-weight: 400;
-        font-size: 1.3rem;
+        font-weight: 600;
+        font-size: 1.6rem;
       }
 
       p {
         margin-top: 1.2rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         font-weight: 200;
-        line-height: 1.4;
+        line-height: 1.5;
         letter-spacing: 0;
       }
     }

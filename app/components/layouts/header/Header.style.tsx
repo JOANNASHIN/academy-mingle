@@ -30,7 +30,7 @@ const style = css`
         font-weight: bold;
         font-size: 2.2rem;
         letter-spacing: 0.1rem;
-        // text-shadow: 0.1rem 0.4rem 0.2rem rgb(0, 0, 0, 0.3);
+        text-shadow: 0.1rem 0.4rem 0.3rem rgb(0, 0, 0, 0.2);
       }
     }
 
