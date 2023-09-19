@@ -25,7 +25,9 @@ const PaymentBlock = () => {
         </dl>
       </div>
       <nav className="box-nav">
-        <button onClick={handleRemind}>전체 리마인드 알림</button>
+        <a href="#" onClick={handleRemind}>
+          전체 리마인드 알림
+        </a>
         <a href="#">청구서 발행</a>
       </nav>
     </section>

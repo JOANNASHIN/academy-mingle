@@ -1,6 +1,7 @@
 import Layout from '@/components/layouts/layout/Layout';
 import AcademyMain from './parts/academyMain';
 import style from './style';
+import MainType2 from './parts/mainType2/index';
 
 const MemberType = {
   Student: 'student',
@@ -16,7 +17,9 @@ const container = () => {
     <Layout css={style}>
       <h2 className="blind">메인페이지</h2>
 
-      <AcademyMain />
+      {false && <AcademyMain />}
+
+      <MainType2 />
     </Layout>
   );
 };

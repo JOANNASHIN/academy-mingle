@@ -1,9 +1,12 @@
 export const color = {
   black: '#000',
   white: '#fff',
-  bg: '#f8f8f8',
+  bg: '#f5f5f5',
   beige: '#f7f7ee',
-  point: '#7a6df2',
+  point: '#00b14f',
+  green: '#00b14f',
+  whiteGreen: '#f1fcee',
+  lightGreen: '#caefdc',
   // 포인트컬러 진한 버전
   pointDark: '#5551f5',
   lime: '#bdf53d',
@@ -19,10 +22,21 @@ export const color = {
   purple: '#6b16ee',
   red: '#e50914',
   greyf8: '#f8f8f8',
+  greyf5: '##f5f5f5',
   grey666: '#666',
   greyaaa: '#aaa',
   greybbb: '#bbb',
   greyccc: '#ccc',
   greyddd: '#ddd',
   greyeee: '#eee',
+  boxShadow: '0.1rem 0.4rem 0.5rem 0.2rem rgb(0, 0, 0, 0.05)',
+};
+
+export const zIndex = {
+  floating: '99',
+  modal: '999',
+};
+
+export const common = {
+  radius: '0.8rem',
 };
