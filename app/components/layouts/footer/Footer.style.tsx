@@ -1,4 +1,4 @@
-import { color, zIndex, layout } from '@/styles/variants';
+import { color, zIndex } from '@/styles/variants';
 import { css } from '@emotion/react';
 
 export const HeaderHeight = '6rem';
