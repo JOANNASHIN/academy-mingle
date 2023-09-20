@@ -1,4 +1,4 @@
-import { color, zIndex } from '@/styles/variants';
+import { color, common } from '@/styles/variants';
 import { css } from '@emotion/react';
 
 export const HeaderHeight = '6rem';
@@ -7,11 +7,13 @@ const style = css`
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: ${zIndex.floating};
+  z-index: ${common.zIndex.floating};
   width: 100%;
   height: 5rem;
-  background: ${color.bg};
+  background: ${color.white};
   border-top: 1px solid ${color.greyeee};
+  box-shadow: 0 0rem 0.5rem 0.2rem rgb(0, 0, 0, 0.05);
+  // box-shadow: ${common.boxShadow};
 
   .footer {
     &__wrapper {

@@ -33,7 +33,7 @@ const style = css`
       padding: 0.4rem;
       border-radius: ${common.radius};
       background: ${color.white};
-      box-shadow: ${color.boxShadow};
+      box-shadow: ${common.boxShadow};
       transform: translate(0, 40%);
       // transform: translate(-0.8rem, 40%);
 
