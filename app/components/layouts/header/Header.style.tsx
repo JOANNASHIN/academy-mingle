@@ -1,4 +1,4 @@
-import { color, layout, zIndex } from '@/styles/variants';
+import { color, common } from '@/styles/variants';
 import { css } from '@emotion/react';
 
 export const HeaderHeight = '6rem';
@@ -8,7 +8,7 @@ const style = css`
   top: 0;
   left: 0;
   background: ${color.point};
-  z-index: ${zIndex.floating};
+  z-index: ${common.zIndex.floating};
   width: 100%;
 
   .header {
@@ -30,7 +30,7 @@ const style = css`
         font-weight: bold;
         font-size: 2.2rem;
         letter-spacing: 0.1rem;
-        // text-shadow: 0.1rem 0.4rem 0.2rem rgb(0, 0, 0, 0.3);
+        text-shadow: 0.1rem 0.4rem 0.4rem rgb(0, 0, 0, 0.1);
       }
     }
 

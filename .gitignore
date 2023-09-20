@@ -4,6 +4,7 @@ node_modules
 
 # production
 /build
+/out
 
 # package-lock.json
 package-lock.json

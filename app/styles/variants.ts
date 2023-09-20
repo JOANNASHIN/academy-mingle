@@ -29,14 +29,13 @@ export const color = {
   greyccc: '#ccc',
   greyddd: '#ddd',
   greyeee: '#eee',
-  boxShadow: '0.1rem 0.4rem 0.5rem 0.2rem rgb(0, 0, 0, 0.05)',
-};
-
-export const zIndex = {
-  floating: '99',
-  modal: '999',
 };
 
 export const common = {
   radius: '0.8rem',
+  boxShadow: '0.1rem 0.4rem 0.5rem 0.2rem rgb(0, 0, 0, 0.05)',
+  zIndex: {
+    floating: '99',
+    modal: '999',
+  },
 };

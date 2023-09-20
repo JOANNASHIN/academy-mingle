@@ -29,7 +29,7 @@ const style = css`
           width: 100%;
           height: 50px;
           padding: 0 20px 0;
-          background: ${color.bgGrey};
+          background: ${color.bg};
           border: 0;
           border-radius: 4px;
           color: ${color.black};
@@ -64,7 +64,7 @@ const style = css`
 
           &:checked + span {
             &:before {
-              background: ${color.bgGrey};
+              background: ${color.bg};
             }
           }
         }
@@ -72,7 +72,7 @@ const style = css`
         span {
           display: flex;
           align-items: center;
-          color: ${color.textGrey};
+          color: ${color.grey666};
           font-size: 13px;
 
           &:before {
@@ -89,13 +89,13 @@ const style = css`
       }
 
       &__help {
-        color: ${color.textGrey};
+        color: ${color.grey666};
         font-size: 13px;
         text-decoration: none;
       }
 
       &__text {
-        color: ${color.textGrey};
+        color: ${color.grey666};
         font-size: 16px;
         font-weight: 400;
       }
