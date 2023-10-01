@@ -32,6 +32,19 @@ const style = css`
       flex-direction: column;
       align-items: center;
       padding: 0.8rem;
+      color: ${color.greyaaa};
+
+      &.active {
+        color: ${color.point};
+      }
+
+      &.notice {
+        img {
+          margin-top: -1rem;
+          // transform: translate(0, -50%);
+          height: 3rem;
+        }
+      }
 
       img {
         height: 2rem;
@@ -40,7 +53,6 @@ const style = css`
       &__name {
         margin-top: 0.6rem;
         font-size: 1rem;
-        color: ${color.greyaaa};
       }
     }
   }
