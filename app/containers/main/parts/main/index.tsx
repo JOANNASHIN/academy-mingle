@@ -5,16 +5,14 @@ import Link from 'next/link';
 import Modal, { IHandleModal } from '@/components/modules/modal/Modal';
 import { useRef } from 'react';
 
-const mainType2 = () => {
-  const refModal = useRef<IHandleModal>(null);
-
+const Main = () => {
   return (
     <section css={style} className="main">
       <h3 className="main-title">야놀자학원</h3>
 
       <form className="search">
         <fieldset>
-          <div className="search__text" onClick={() => refModal.current?.openModal()}>
+          <div className="search__text">
             <em>아밍글이 처음이신가요?</em>
             <p>아밍글의 다양한 서비스를 검색해 보세요.</p>
           </div>
@@ -153,12 +151,8 @@ const mainType2 = () => {
           </nav>
         </section>
       </div>
-
-      <Modal ref={refModal} title="모달제목커스텀">
-        <div>zzz</div>
-      </Modal>
     </section>
   );
 };
 
-export default mainType2;
+export default Main;

@@ -1,7 +1,7 @@
 import Layout from '@/components/layouts/layout/Layout';
 import AcademyMain from './parts/academyMain';
 import style from './style';
-import MainType2 from './parts/mainType2/index';
+import Main from './parts/main/index';
 
 const MemberType = {
   Student: 'student',
@@ -19,7 +19,7 @@ const container = () => {
 
       {false && <AcademyMain />}
 
-      <MainType2 />
+      <Main />
     </Layout>
   );
 };
