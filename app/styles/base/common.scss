@@ -39,7 +39,7 @@
 //가이드 텍스트
 .guidetext {
   display: block;
-  @include fontcss($grey888, 400, rem(12px), rem(18px));
+  @include font($grey888, 400, rem(12px), rem(18px));
   word-break: break-all;
   letter-spacing: -0.03em;
 
@@ -77,7 +77,7 @@
   &__delete {
     display: flex;
     align-items: center;
-    @include fontcss($grey666, 400, rem(13px), rem(19px));
+    @include font($grey666, 400, rem(13px), rem(19px));
 
     &:before {
       content: '';
