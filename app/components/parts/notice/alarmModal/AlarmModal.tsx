@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import Modal, { IHandleModal } from '@/components/modules/modal/Modal';
-import NoticeSummary, { Notice } from '@/components/units/noticeSummary/NoticeSummary';
+import NoticeSummary, { Notice } from '@/components/parts/notice/noticeSummary/NoticeSummary';
 
 interface IProps {}
 

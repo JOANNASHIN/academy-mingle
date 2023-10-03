@@ -2,16 +2,15 @@
 
 import Link from 'next/link';
 import style from './Header.style';
-import AlarmModal from '@/components/parts/alarmModal/AlarmModal';
+import AlarmModal from '@/components/parts/notice/alarmModal/AlarmModal';
 import { useRef } from 'react';
 import { useModal } from '@/hooks/useModal';
-import { IHandleModal } from '@/components/modules/modal/Modal';
 
 interface IHeaderProps {}
 
 const Header = (props: IHeaderProps) => {
   const { openModal } = useModal();
-  const refAlarmModal = useRef<IHandleModal>(null);
+  const refAlarmModal = useRef(null);
 
   return (
     <>

@@ -1,6 +1,6 @@
-import PaymentBlock from '@/components/parts/paymentBlock/Payment';
+import PaymentBlock from '@/components/parts/payment/paymentBlock/Payment';
 import style from './style';
-import ConsultantBlock from '@/components/parts/counsultantBlock/ConsultantBlock';
+import ConsultantBlock from '@/components/parts/consultant/counsultantBlock/ConsultantBlock';
 
 const AcademyMain = () => {
   return (

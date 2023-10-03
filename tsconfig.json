@@ -2,17 +2,11 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "app/*"
-      ]
+      "@/*": ["app/*"]
     },
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
@@ -31,26 +25,19 @@
         "name": "next"
       }
     ],
-    "types": [
-      "@emotion/react/types/css-prop"
-    ],
+    "types": ["@emotion/react/types/css-prop"],
     "jsxImportSource": "@emotion/react",
     "strictNullChecks": true,
     "noImplicitAny": true,
-    "typeRoots": [
-      "./node_modules/@types",
-      "types",
-      "src/types"
-    ]
+    "typeRoots": ["./node_modules/@types", "types", "src/types"]
   },
   "include": [
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "build/types/**/*.ts"
+    "build/types/**/*.ts",
+    "app/components/parts/notice/noticeFormModal"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }
