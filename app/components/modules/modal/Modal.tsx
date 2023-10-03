@@ -1,3 +1,4 @@
+import App from '@/constants/app';
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
 
 interface IModalProps {
@@ -6,6 +7,7 @@ interface IModalProps {
   showTitle?: boolean;
   showHeader?: boolean;
   showClose?: boolean;
+  scrollLock?: boolean;
 }
 
 export interface IHandleModal {
@@ -14,7 +16,7 @@ export interface IHandleModal {
 }
 
 const Modal = forwardRef<IHandleModal, IModalProps>(
-  ({ title = '', showHeader = true, showTitle = true, showClose = true, children }, ref) => {
+  ({ title = '', children, showHeader = true, showTitle = true, showClose = true, scrollLock = true }, ref) => {
     const [show, setShow] = useState(false);
 
     /**
@@ -22,6 +24,10 @@ const Modal = forwardRef<IHandleModal, IModalProps>(
      */
     const openModal = () => {
       setShow(true);
+
+      if (scrollLock) {
+        document.querySelector('body')?.classList.add(App.ClassName.ScrollLock);
+      }
     };
 
     /**
@@ -29,6 +35,7 @@ const Modal = forwardRef<IHandleModal, IModalProps>(
      */
     const closeModal = () => {
       setShow(false);
+      document.querySelector('body')?.classList.remove(App.ClassName.ScrollLock);
     };
 
     /**
@@ -49,7 +56,7 @@ const Modal = forwardRef<IHandleModal, IModalProps>(
 
                 {showClose && (
                   <button className="modal__close" onClick={closeModal}>
-                    <img src="/assets/images/icon/close.svg" alt="" />
+                    <img src="/assets/images/icon/close.svg" alt="닫기" />
                   </button>
                 )}
               </header>
