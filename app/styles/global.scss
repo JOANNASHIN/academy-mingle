@@ -17,3 +17,6 @@ $rem-baseline: 10px;
 @import './base/common.scss';
 @import './base/reset.scss';
 @import './base/layout.scss';
+
+// components
+@import './components/modules/modal.scss';
