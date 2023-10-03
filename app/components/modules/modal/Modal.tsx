@@ -1,8 +1,10 @@
 import App from '@/constants/app';
+import classNames from 'classnames';
 import React, { forwardRef, useImperativeHandle, useState } from 'react';
 
 interface IModalProps {
   title?: string;
+  className?: string;
   children?: React.ReactElement;
   showTitle?: boolean;
   showHeader?: boolean;
@@ -16,7 +18,10 @@ export interface IHandleModal {
 }
 
 const Modal = forwardRef<IHandleModal, IModalProps>(
-  ({ title = '', children, showHeader = true, showTitle = true, showClose = true, scrollLock = true }, ref) => {
+  (
+    { title = '', children, showHeader = true, showTitle = true, showClose = true, scrollLock = true, className },
+    ref,
+  ) => {
     const [show, setShow] = useState(false);
 
     /**
@@ -49,7 +54,7 @@ const Modal = forwardRef<IHandleModal, IModalProps>(
     return (
       <>
         {show && (
-          <article className="modal">
+          <article className={classNames('modal', className)}>
             {showHeader && (
               <header className="modal__header">
                 {showTitle && <h2 className="modal__title">{title}</h2>}
