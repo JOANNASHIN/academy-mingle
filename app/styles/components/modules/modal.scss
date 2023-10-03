@@ -32,6 +32,8 @@
   }
 
   &__content {
-    @include flex();
+    &:empty {
+      @include flex();
+    }
   }
 }
