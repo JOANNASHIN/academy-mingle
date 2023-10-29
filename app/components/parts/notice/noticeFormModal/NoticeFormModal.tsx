@@ -6,9 +6,13 @@ import NoticeAddForm from '@/components/modules/noticeAddForm/NoticeAddForm';
 interface IProps {}
 
 const NoticeFormModal = forwardRef<IHandleModal, IProps>((props, refModal) => {
+  const hanldeSubmit = (payload: any) => {
+    console.log(payload, 'submit');
+  };
+
   return (
     <Modal ref={refModal} title="공지사항 등록" className="NoticeFormModal">
-      <NoticeAddForm></NoticeAddForm>
+      <NoticeAddForm onSubmit={payload => hanldeSubmit(payload)}></NoticeAddForm>
     </Modal>
   );
 });
