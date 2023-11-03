@@ -2,17 +2,22 @@ import App from '@/constants/app';
 import classNames from 'classnames';
 import React, { FormEvent, useState } from 'react';
 
+export interface Form {
+  title: string;
+  content: string;
+}
+
 interface IProps {
-  onSubmit: (payload: any) => void;
+  onSubmit: (payload: Form) => void;
 }
 
 const NoticeAddForm = ({ onSubmit }: IProps) => {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<Form>({
     title: '',
     content: '',
   });
 
-  const handleUpdateForm = (type: 'title' | 'content', value: string) => {
+  const handleUpdateForm = (type: keyof Form, value: string) => {
     setForm(prev => ({
       ...prev,
       [type]: value,
