@@ -9,10 +9,13 @@ import { useModal } from '@/hooks/useModal';
 interface IFooterProps {}
 
 const Footer = (props: IFooterProps) => {
-  const { openModal } = useModal();
+  const { openModal, closeModal } = useModal();
   const refNoticeFormModal = useRef(null);
 
   const activeKey = 'home';
+  const handleSubmit = () => {
+    closeModal(refNoticeFormModal);
+  };
 
   return (
     <>
@@ -46,7 +49,7 @@ const Footer = (props: IFooterProps) => {
         </nav>
       </footer>
 
-      <NoticeFormModal ref={refNoticeFormModal} />
+      <NoticeFormModal ref={refNoticeFormModal} onSubmit={handleSubmit} />
     </>
   );
 };

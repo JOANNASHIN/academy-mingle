@@ -36,17 +36,21 @@ const style = css`
 
     input {
       flex: 1 1 auto;
+      padding: 1rem;
       height: 3.5rem;
       border: 1px solid ${color.greyddd};
       border-radius: 1rem;
+      font-size: 1.4rem;
     }
 
     textarea {
       flex: 0 0 100%;
       height: 20rem;
       margin-top: 1rem;
+      padding: 1rem;
       border-radius: 1rem;
       border-color: ${color.greyddd};
+      font-size: 1.4rem;
     }
   }
 `;

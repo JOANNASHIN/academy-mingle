@@ -23,11 +23,27 @@ const NoticeAddForm = ({ onSubmit }: IProps) => {
       ...prev,
       [type]: value,
     }));
-    console.log(form);
+  };
+
+  const checkValidator = () => {
+    if (!form.title) {
+      alert('제목을 입력해주세요.');
+      return false;
+    }
+
+    if (!form.content) {
+      alert('내용을 입력해주세요.');
+      return false;
+    }
+
+    return true;
   };
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
+
+    if (!checkValidator()) return;
+
     onSubmit(form);
   };
 
