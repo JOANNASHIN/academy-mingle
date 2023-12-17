@@ -4,8 +4,9 @@ import { css } from '@emotion/react';
 const style = css`
   .form {
     &__field {
-      padding: 0 1.2rem;
+      padding: 1rem 1.2rem;
     }
+
     &__bottom {
       display: flex;
       align-items: center;
@@ -15,7 +16,8 @@ const style = css`
 
     &__submit {
       padding: 1.2rem 2rem;
-      background: ${color.black};
+      background: ${color.point};
+      border-radius: 0.4rem;
       color: ${color.white};
       font-size: 1.4rem;
       line-height: 1;
@@ -35,8 +37,9 @@ const style = css`
     }
 
     input {
-      flex: 1 1 auto;
+      flex: 0 0 100%;
       padding: 1rem;
+      margin-top: 1rem;
       height: 3.5rem;
       border: 1px solid ${color.greyddd};
       border-radius: 1rem;
