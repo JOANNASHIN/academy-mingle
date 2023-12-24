@@ -1,6 +1,7 @@
 import React, { forwardRef } from 'react';
 import Modal, { IHandleModal } from '@/components/modules/modal/Modal';
 import NoticeSummary, { Notice } from '@/components/parts/notice/noticeSummary/NoticeSummary';
+import style from './AlarmModal.style';
 
 interface IProps {}
 
@@ -33,17 +34,15 @@ const AlarmModal = forwardRef<IHandleModal, IProps>((props, refModal) => {
   ];
 
   return (
-    <Modal ref={refModal} title="알림" className="alarmModal">
-      <>
-        <div className="alarm__wrapper">
-          {alarms &&
-            alarms.map(noti => (
-              <React.Fragment key={noti.id}>
-                <NoticeSummary noti={noti} />
-              </React.Fragment>
-            ))}
-        </div>
-      </>
+    <Modal ref={refModal} title="알림" className="alarm" css={style}>
+      <div className="alarm__wrapper">
+        {alarms &&
+          alarms.map(noti => (
+            <React.Fragment key={noti.id}>
+              <NoticeSummary noti={noti} />
+            </React.Fragment>
+          ))}
+      </div>
     </Modal>
   );
 });

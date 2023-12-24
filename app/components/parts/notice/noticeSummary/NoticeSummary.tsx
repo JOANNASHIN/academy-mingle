@@ -1,5 +1,6 @@
 import React from 'react';
 import { YN } from '@/types/common';
+import style from './NoticeSummary.style';
 
 export interface Notice {
   id: number;
@@ -16,17 +17,12 @@ interface IProps {
 
 const NoticeSummary = ({ noti }: IProps) => {
   return (
-    <div>
-      <span>
+    <div css={style}>
+      <span className="noti__icon">
         <img src="/assets/images/icon/megaphone-fill.svg" alt={noti?.type} />
       </span>
-      <div>
-        <p>{noti?.title}</p>
-      </div>
-      <div>
-        <p>{noti?.detail}</p>
-        {noti?.readYn && <span>안읽음</span>}
-      </div>
+      <p className="noti__title">{noti?.title}</p>
+      {noti?.readYn && <span className="noti__check">안읽음</span>}
     </div>
   );
 };

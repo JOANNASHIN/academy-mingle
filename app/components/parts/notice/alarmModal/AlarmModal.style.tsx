@@ -1,4 +1,6 @@
 import { css } from '@emotion/react';
 
-const style = css``;
+const style = css`
+  /
+`;
 export default style;
