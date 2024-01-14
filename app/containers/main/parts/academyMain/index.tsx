@@ -5,39 +5,11 @@ import ConsultantBlock from '@/components/parts/consultant/counsultantBlock/Cons
 const AcademyMain = () => {
   return (
     <section css={style} className="main">
-      <h3 className="main-title">야놀자학원</h3>
+      <h3 className="main-title">아밍글학원</h3>
 
       {/* 학생 */}
-      <section className="border-gray-box">
-        <div className="box-top">
-          <span className="box-title">전체 출석현황</span>
-        </div>
-        <div className="box-cont">
-          <dl className="box-desc">
-            <dt>출석</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-          <dl className="box-desc">
-            <dt>결석</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-          <dl className="box-desc">
-            <dt>조퇴</dt>
-            <dd>
-              <span>0</span>
-            </dd>
-          </dl>
-        </div>
-
-        <nav className="box-nav">
-          <a href="#">클래스별 출석현황 전체 보기</a>
-        </nav>
-      </section>
-
+      <AttendanceBlock />
+      
       {/* 상담 */}
       <ConsultantBlock />
 
