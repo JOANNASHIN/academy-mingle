@@ -10,6 +10,7 @@ const style = css`
 
   .login {
     &__form {
+      width: 100%;
       padding: 60px 68px 150px;
       border-radius: 4px;
       box-sizing: border-box;
@@ -24,7 +25,7 @@ const style = css`
       &__input {
         display: block;
         margin-bottom: 16px;
-
+        /* 
         input {
           width: 100%;
           height: 50px;
@@ -35,7 +36,21 @@ const style = css`
           color: ${color.black};
           line-height: 50px;
           box-sizing: border-box;
-        }
+        } */
+      }
+
+      &__show-pw {
+        width: 20px;
+        height: 20px;
+        font-size: 0;
+        color: ${color.greyaaa};
+        cursor: pointer;
+      }
+
+      &__error {
+        display: block;
+        margin-top: 4px;
+        color: ${color.red};
       }
 
       &__submit {

@@ -1,0 +1,44 @@
+.input {
+  display: inline-block;
+  width: 100%;
+  min-height: 36px;
+  padding: 0 10px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+
+  &-container {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+
+    input {
+      padding: 0;
+    }
+  }
+
+  &-border {
+    border: 1px solid gray;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all 0.25s;
+
+    &:hover {
+      border-color: #1677ff;
+    }
+
+    &:focus,
+    &:focus-within {
+      border-color: #1677ff;
+      box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.5);
+    }
+  }
+}
+
+.clear {
+  width: 20px;
+  height: 20px;
+  outline: 0;
+}
